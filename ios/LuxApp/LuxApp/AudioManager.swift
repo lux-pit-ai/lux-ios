@@ -5,7 +5,7 @@ import WhisperKit
 
 // MARK: - Errors
 
-enum AudioManagerError: LocalizedError {
+enum AudioManagerError: LocalizedError, Equatable {
     case permissionDenied
     case engineStartFailed(String)
     case noAudioCaptured
